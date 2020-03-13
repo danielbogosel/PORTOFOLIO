@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mvnportofolio" />
+        <module name="mvn-portofolio" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="12" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mvn-portofolio" options="-parameters" />
       <module name="mvnportofolio" options="-parameters" />
     </option>
   </component>

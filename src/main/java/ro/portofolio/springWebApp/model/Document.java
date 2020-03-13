@@ -1,18 +1,21 @@
 package ro.portofolio.springWebApp.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Document {
+    @Id
     private String documentId;
     private String name;
 
+    public Document() {
+
+    }
     public Document(String document, String name) {
         this.documentId = document;
         this.name = name;
-    }
-
-    public Document() {
-
     }
 
     public String getDocumentId() {
